@@ -1,5 +1,10 @@
 let choices = ['rock', 'paper', 'scissors']
 let computerChoice = 'rock'
+function randomizer (){
+    let randomNum = Math.floor(Math.random() * 3)
+    computerChoice = choices[randomNum]
+    console.log(computerChoice)
+    }
 function play (playerChoice){
 
     randomizer()
@@ -32,12 +37,5 @@ function play (playerChoice){
         } else {
             console.log('tie')
         }
-    }
-
-
-function randomizer (){
-    let randomNum = Math.floor(Math.random() * 3)
-    computerChoice = choices[randomNum]
-    console.log(computerChoice)
     }
 }
